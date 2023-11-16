@@ -1,0 +1,15 @@
+<header>
+        <nav>
+          <div class="logo-alacarte">
+            <img src="{{ url_for('static', filename='fotos_site/img1a.png') }}" height="75" width="8">
+          </div>
+         <div class="restante-nav">
+            <p class="botao-perfil"><a href="{{ url_for('perfil', id_usuario=current_user.id) }}" class="link-nav">Perfil</a></p>
+            <p class="botao-perfil"><a href="{{ url_for('feed') }}" class="link-nav">Fotos</a>
+            <p class="botao-perfil"><a href="" class="link-nav">Roteiros</a>
+            <p class="botao-perfil"><a href="" class="link-nav">Videos</a>
+            <p class="botao-perfil"><a href="" class="link-nav">Blog</a>
+            <p class="botao-perfil"><a href="{{ url_for('logout') }}" class="link-nav">Sair</a>
+          </div>
+        </nav>
+</header>
